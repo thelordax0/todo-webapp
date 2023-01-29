@@ -59,8 +59,10 @@ body {
 }
 .todo-list .todo {
   padding: 0.1rem 0.4rem;
-  border-radius: 10px;
-  border: 1px solid cadetblue;
+  border-radius: 0px 5px 5px 0px;
+  border-width:1px 1px 1px 5px ;
+  border-style: solid;
+  border-color: cadetblue;
   margin: 8px;
   word-wrap: break-word;
   display: flex;
@@ -68,13 +70,13 @@ body {
   align-items: center;
 }
 .todo-list .todo i {
-  color: green;
+  color: cadetblue;
   padding: 6px 6px;
   cursor: pointer;
   border-radius: 100%;
 }
 .todo-list .todo i:hover {
-  background-color: green;
+  background-color: cadetblue;
   color: white;
 }
 .todo-list .todo span::first-letter {
@@ -84,7 +86,7 @@ body {
 
 #up {
   padding: 10px;
-  background-color: green;
+  background-color: cadetblue;
   color: white;
   position: fixed;
   right: 20px;
