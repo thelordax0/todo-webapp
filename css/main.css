@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 32px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+.head {
+  width: auto;
+  height: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.head #todo-text {
+  font-size: 1.1rem;
+  text-align: center;
+
+  border: 1px solid cadetblue;
+  border-radius: 10px;
+}
+.head #todo-text:focus {
+  outline: none;
+  border-radius: 0px;
+}
+.head input[type="submit"] {
+  width: 50%;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid cadetblue;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.todo-list-container {
+  width: 100%;
+}
+.todo-list {
+  list-style-type: none;
+  word-wrap: break-word;
+}
+.todo-list .todo {
+  padding: 0.1rem 0.4rem;
+  border-radius: 10px;
+  border: 1px solid cadetblue;
+  margin: 8px;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-list .todo i {
+  color: green;
+  padding: 6px 6px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.todo-list .todo i:hover {
+  background-color: green;
+  color: white;
+}
+.todo-list .todo span::first-letter {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#up {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 0.6rem;
+  display: none;
+  cursor: pointer;
+}
