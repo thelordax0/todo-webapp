@@ -69,6 +69,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.todo-list .todo:hover{
+  transform: scale(1.01);
+  
+}
 .todo-list .todo i {
   color: cadetblue;
   padding: 6px 6px;
